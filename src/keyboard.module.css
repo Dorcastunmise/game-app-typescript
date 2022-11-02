@@ -1,0 +1,29 @@
+.button {
+    width: 100%;
+    border-color: #3498db;
+    color: #00B8FF;
+    box-shadow: 0 0 10px 0 #adcde2 inset, 0 0 2px 2px #a7c9df;
+    border-radius: 8px;
+    font-weight: bolder;
+    padding: 6px;
+    -webkit-transition: all 150ms ease-in-out;
+    transition: all 150ms ease-in-out;
+    min-width: fit-content;
+    text-transform: uppercase;
+}
+.button.active {
+    background-color: #151718;
+    color: whitesmoke;
+    font-weight: bolder;
+}
+.button.inactive {
+    opacity: 0.3;
+}
+.button:hover:not(:disabled), 
+.button::selection:not(:disabled) {
+    color: #00B8FF;
+    box-shadow: 0 0 2px 2px #7fb4d6, 0 0 0 0 #00B8FF;
+    border-radius: 4px;
+    cursor: pointer;
+}
+

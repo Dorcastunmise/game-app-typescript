@@ -1,0 +1,129 @@
+.everything {
+    background: #edf1f7;
+}
+.App {
+    max-width: 800px;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin: 0 auto;
+    align-items: center;
+}
+.response {
+    font-size: 2rem;
+    margin-right: 0;
+    margin-left: 90px;
+    color: darkslategrey;
+}
+
+/* suuport system for hanging */
+.diagram-wrapper {
+    position: relative;
+}
+.middle-line {
+    height: 300px;
+    width: 10px;
+    background: black;
+    margin-left: 120px;
+}
+.bottom-line {
+    height: 10px;
+    width: 200px;
+    background: black;
+}
+.top-line {
+    height: 10px;
+    width: 180px;
+    background: black;
+    margin-left: 120px;
+}
+.drop-line {
+    height: 30px;
+    width: 10px;
+    background: black;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+/* the body */
+.head-portion {
+    width: 50px;
+    height: 40px;
+    border-radius: 100%;
+    border: 10px solid black;
+    position: absolute;
+    top: 20px;
+    right: -30px;
+}
+.straight-portion {
+    width: 10px;
+    height: 100px;
+    background: black;
+    position: absolute;
+    top: 80px;
+    right: 0;
+}
+.right-limb {
+    width: 80px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: -80px;
+    rotate: -30deg;
+    transform-origin: left bottom;
+}
+.left-limb {
+    width: 80px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 120px;
+    right: 10px;
+    rotate: 30deg;
+    transform-origin: right bottom;
+}
+.right-leg {
+    width: 80px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 170px;
+    right: -70px;
+    rotate: 60deg;
+    transform-origin: left bottom;
+}
+.left-leg {
+    width: 80px;
+    height: 10px;
+    background: black;
+    position: absolute;
+    top: 170px;
+    right: 0;
+    rotate: -60deg;
+    transform-origin: right bottom;
+}
+
+/*words display */
+.text {
+    display: flex;
+    gap: .3rem;
+    font-size: 5rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: monospace;
+}
+.each-letter {
+    border-bottom: 0.1em solid black;
+}
+/* keyboard*/
+.stretch {
+    align-self: stretch;
+}
+.keyboard {
+    display: grid;
+    /*repeat - columns with autofit, minmax for sizing- minimum of 75px and 1fr to stretch the max*/
+    grid-template-columns: repeat(auto-fit, minmax(75px, 1fr));
+    gap: 0.5rem;
+}
