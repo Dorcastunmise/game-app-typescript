@@ -3,9 +3,7 @@
    box-sizing: border-box;
    overflow: hidden;
 }
-.everything {
-    background: #edf1f7;
-}
+
 .App {
     max-width: 800px;
     display: flex;
